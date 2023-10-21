@@ -1,0 +1,46 @@
+user{
+    pk-id 
+    username
+    email (varchar 30)
+    password (text)
+    profile (text)
+}
+logo{
+    pk-id
+    thumbnail (text)
+    status (header,footer) (char 10)
+}
+news{
+    pk-id
+    auhtor_id
+    banner (text)
+    thumbnail (text)
+    title (varchar 255)
+    decription (text)
+    create_at (date,datetime)
+    category (char 30)
+    type (char 20)
+    views (int,long)
+}
+decription{
+    pk-id
+    decription (text)
+}
+follow_us{
+    pk-id
+    icon (text)
+    label (char 30)
+    url (text)
+}
+feedback{
+    pk-id
+    username (char 30)
+    email (char 30)
+    telephone (char 15)
+    address (text)
+    message (text)
+    create_at (date ,datetime)
+}
+
+* pk-id (int,ai)
+* auhtor_id (int)
